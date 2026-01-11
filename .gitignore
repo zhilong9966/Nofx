@@ -124,3 +124,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 PR_DESCRIPTION.md
+
+# Exception for frontend source lib
+!web/src/lib/
+!web/src/data/

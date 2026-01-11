@@ -1,6 +1,7 @@
 services:
   # Backend service (API and core logic)
   nofx:
+    image: ghcr.io/zhilong9966/nofx/nofx-backend:latest
     build:
       context: .
       dockerfile: ./docker/Dockerfile.backend
@@ -29,6 +30,7 @@ services:
 
   # Frontend service (static serving and proxy)
   nofx-frontend:
+    image: ghcr.io/zhilong9966/nofx/nofx-frontend:latest
     build:
       context: .
       dockerfile: ./docker/Dockerfile.frontend

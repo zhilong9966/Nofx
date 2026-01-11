@@ -138,7 +138,7 @@ To use NOFX, you'll need:
 
 **Linux / macOS:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NoFxAiOS/nofx/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhilong9966/Nofx/main/install.sh | bash
 ```
 
 That's it! Open **http://127.0.0.1:3000** in your browser.
@@ -260,20 +260,20 @@ Access Web Interface: **http://127.0.0.1:3000**
    ```bash
    # Update system
    sudo apt update && sudo apt upgrade -y
-
+   
    # Install Go
    wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
    sudo tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
    echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
    source ~/.bashrc
-
+   
    # Install Node.js
    curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
    sudo apt-get install -y nodejs
-
+   
    # Install TA-Lib
    sudo apt-get install -y libta-lib0-dev
-
+   
    # Install Git
    sudo apt-get install -y git
    ```
@@ -282,10 +282,10 @@ Access Web Interface: **http://127.0.0.1:3000**
    ```bash
    git clone https://github.com/NoFxAiOS/nofx.git
    cd nofx
-
+   
    # Build and run backend
    go build -o nofx && ./nofx
-
+   
    # In another terminal, run frontend
    cd web && npm install && npm run dev
    ```

@@ -9,7 +9,7 @@
 
 services:
   nofx:
-    image: ghcr.io/nofxaios/nofx/nofx-backend:latest
+    image: ghcr.io/zhilong9966/nofx/nofx-backend:latest
     container_name: nofx-trading
     restart: unless-stopped
     stop_grace_period: 30s
@@ -33,7 +33,7 @@ services:
       start_period: 60s
 
   nofx-frontend:
-    image: ghcr.io/nofxaios/nofx/nofx-frontend:latest
+    image: ghcr.io/zhilong9966/nofx/nofx-frontend:latest
     container_name: nofx-frontend
     restart: unless-stopped
     ports:

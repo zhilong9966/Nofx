@@ -22,7 +22,7 @@ NC='\033[0m' # No Color
 # Default installation directory
 INSTALL_DIR="${1:-$HOME/nofx}"
 COMPOSE_FILE="docker-compose.prod.yml"
-GITHUB_RAW="https://raw.githubusercontent.com/NoFxAiOS/nofx/main"
+GITHUB_RAW="https://raw.githubusercontent.com/zhilong9966/Nofx/main"
 
 echo -e "${BLUE}"
 echo "╔════════════════════════════════════════════════════════════╗"
@@ -251,7 +251,7 @@ print_success() {
     echo -e "║  💡 Keep Updated: Run this command daily to stay current   ║"
     echo -e "╚════════════════════════════════════════════════════════════╝${NC}"
     echo ""
-    echo -e "  ${GREEN}curl -fsSL https://raw.githubusercontent.com/NoFxAiOS/nofx/main/install.sh | bash${NC}"
+    echo -e "  ${GREEN}curl -fsSL https://raw.githubusercontent.com/zhilong9966/Nofx/main/install.sh | bash${NC}"
     echo ""
     echo -e "  Updates are frequent. This one-liner pulls the latest"
     echo -e "  official images and restarts services automatically."
